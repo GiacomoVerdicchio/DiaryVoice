@@ -17,6 +17,7 @@ class MainApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.lightGreen[50],
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.green[700],
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 22),
         ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Colors.green),
@@ -156,11 +157,11 @@ class _SpeechToTextScreenState extends State<SpeechToTextScreen> {
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.green[700],
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 15, vertical: 15),
-                          textStyle: const TextStyle(fontSize: 24),
+                              horizontal: 17, vertical: 17),
+                          textStyle: const TextStyle(fontSize: 10),
                         ),
                         child: const Icon(
-                          Icons.backspace_outlined,
+                          Icons.highlight_remove,
                           size: 20,
                           color: Colors.white,
                         ),
@@ -176,7 +177,7 @@ class _SpeechToTextScreenState extends State<SpeechToTextScreen> {
                         ),
                         child: Icon(
                           _isListening ? Icons.mic : Icons.mic_none,
-                          size: 36,
+                          size: 46,
                           color: Colors.white,
                         ),
                       ),
