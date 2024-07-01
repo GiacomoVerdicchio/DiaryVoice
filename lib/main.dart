@@ -77,7 +77,7 @@ class _SpeechToTextScreenState extends State<SpeechToTextScreen> {
           //pauseFor: const Duration(seconds: 1),
           //listenFor: const Duration(seconds: 10),
           onResult: (val) => setState(() {
-            _text = _oldText + _replacePunctuation(val.recognizedWords);
+            _text = '$_oldText ${_replacePunctuation(val.recognizedWords)}';
           }),
         );
       } else {
