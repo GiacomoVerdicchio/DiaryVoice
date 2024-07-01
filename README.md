@@ -14,3 +14,9 @@ And then in some hours the app was already born...
 ### Configuration  :wrench:
 It needs only to be installed and you need to grant the permission to access to your microphone...
 ...and then the magic starts 
+
+### Notes
+Clearly this app is very simple and the design of the app (from a technical point of view) is not so well-structured, has no Model View Model-View pattern was applied and 
+so it has a very centralized-monolithic organization. But this is due to the need of having the app ready as faster as possible, because this tool was truely and desperately needed.
+
+<br></br> So any refactor in order to make the architecture cleaner will be a future upgrade.
